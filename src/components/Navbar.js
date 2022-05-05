@@ -40,7 +40,7 @@ const handleClick = () => setClick(!click)
                         <img src={Usflag} alt='us flag' width='24px'/>
                         </div>
                         <a href='/'>Eng</a>
-                        <AiFillCaretDown/>
+                        <AiFillCaretDown  style={{color: 'white'}}/>
                     </li>
                     <li>
 
