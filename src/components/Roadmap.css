@@ -27,7 +27,7 @@
 }
 
 .phase-container{
-    max-width: 824px;
+    /* max-width: 824px; */
     margin: 0 auto;
     border-left: 2px solid #B4C466;
 }
@@ -65,7 +65,7 @@
     }
 
     .phase-item h2{
-        font-size: 16px;
+        font-size: 20px;
     }
 
 }
