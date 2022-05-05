@@ -10,3 +10,12 @@
 h1 .green{
     color: #78843b;
 }
+
+@media screen and (max-width: 940px) {
+    
+    .center h1{
+       
+        font-size: 24px;
+        
+    }
+}
