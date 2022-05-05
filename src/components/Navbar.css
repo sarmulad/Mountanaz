@@ -1,8 +1,6 @@
 .header {
     width: 100%;
     height: 90px;
-    border-bottom: 1px solid #eee;
-    background: #fff;
     position: sticky;
     top: 0;
     left: 0;
@@ -15,6 +13,7 @@
     align-items: center;
     height: 100%;
     padding: 1rem;
+
 }
 
 .colors {
@@ -23,6 +22,7 @@
 
 .nav-menu {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu li {
@@ -32,7 +32,7 @@
 .nav-menu a {
     font-size: 1rem;
     font-weight: 600;
-    color: #333;
+    color: white;
 }
 
 .hamburger {
@@ -40,7 +40,15 @@
     cursor: pointer;
 }
 
-
+@media screen and (max-width:600px){
+    .centreham {
+        position: absolute;
+        top: 15vh;
+        left: 50vw;
+         z-index: 7;
+        
+    }
+}
 @media screen and (max-width:1240px) {
     .hamburger {
         display: flex;
@@ -49,30 +57,32 @@
     .nav-menu {
         position: absolute;
         flex-direction: column;
-        justify-content: start;
-        top: 90px;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 30px;
+        top: 0px;
         right: -100%;
-        width: 50%;
+        width: 100%;
         height: 100vh;
-        transition: 0.4s;
+        transition: 0.9s;
         z-index: 2;
-        background: #fff;
-        border-left: 1px solid #eee;
     }
 
     .nav-menu.active {
         right: 0;
+        background-color: #545C29;
     }
 
-    .nav-menu li {
-        padding: 1rem;
-        width: 100%;
-        border-bottom: 1px solid #eee;
-    }
+    
 
     .nav-menu a {
         font-size: 1.2rem;
+        color: white;
+        
     }
+    /* .wallet-btn{
+        display: none;
+    } */
 }
 
 

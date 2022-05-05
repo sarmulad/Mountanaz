@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaFacebook, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import logo from '../assets/logo.svg'
+import { FaTelegram, FaFacebook, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa'
 import './Footer.css'
 
 const Footer = () => {
@@ -7,43 +8,20 @@ const Footer = () => {
         <div className='footer'>
             <div className='container'>
                 <div className='col col-1'>
-                    <h1>De<span className='primary'>Fi</span></h1>
+                    <img src={logo} alt='logos'/>
                 </div>
                 <div className='col'>
-                    <h5>Support</h5>
-                    <span className='bar'></span>
-                        <a href='/'>Contact Us</a>
-                        <a href='/'>Chat</a>
-                        <a href='/'>Help Center</a>
-                        <a href='/'>FAQ</a>
-
-                </div>
-                <div className='col'>
-                    <h5>Developers</h5>
-                    <span className='bar'> </span>
-                        <a href='/'>Cloud</a>
-                        <a href='/'>Commerce</a>
-                        <a href='/'>Pro</a>
-                        <a href='/'>API</a>
-                   
-                </div>
-                <div className='col'>
-                    <h5>Company</h5>
-                    <span className='bar'> </span>
-                        <a href='/'>About</a>
-                        <a href='/'>Information</a>
-                        <a href='/'>Legal</a>
-                        <a href='/'>Privacy</a>
-                </div>
-                <div className='col'>
-                    <h5>Social</h5>
-                    <span className='bar'> </span>
-                        <a href='/'><FaFacebook className='icon'/></a>
-                        <a href='/'><FaTwitter className='icon'/></a>
-                        <a href='/'><FaLinkedin className='icon'/></a>
-                        <a href='/'><FaGithub className='icon'/></a>
+                    <h5>Connect with Us</h5>
+                        <div className='icon-container'>
+                            <a href='/'><FaTelegram className='icon'/></a>
+                            <a href='/'><FaFacebook className='icon'/></a>
+                            <a href='/'><FaYoutube className='icon'/></a>
+                            <a href='/'><FaTwitter className='icon'/></a>
+                            <a href='/'><FaInstagram className='icon'/></a>
+                        </div>
                 </div>
             </div>
+            <p>Copyright © 2022 Mountanaz Token. All rights reserved</p>
             
         </div>
     )
