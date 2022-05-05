@@ -83,9 +83,8 @@ p {
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: #fff;
-  /* border-radius: 24px 4px; */
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   cursor: pointer;
   height: 52px;
   background: #78843B;
@@ -93,6 +92,7 @@ p {
   margin-right: 20px;
   text-align: center;
 }
+
 *.btn{
   display: flex;
   align-items: center;
@@ -146,6 +146,7 @@ input {
   .btn {
     /* width: 100%; */
     margin: 1rem 0;
+    font-size: 16px;
   }
 
 
