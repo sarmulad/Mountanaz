@@ -119,6 +119,11 @@ input {
   font-family: 'Poppins', sans-serif;
 }
 
+.read-more-button{
+  color: white;
+  opacity: 0.8;
+  text-decoration: underline;
+}
 
 @media screen and (max-width:768px) {
   .container{
