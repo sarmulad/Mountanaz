@@ -6,13 +6,13 @@ import Presale from '../components/Presale';
 
 function Benefit() {
     return (
-      <>
-      <Navbar/>
+      <div className='benefit'>
+        <Navbar/>
         <h1 className='benefit-header'>The Benefits of the Mountanaz Token </h1>
         <YieldFarming/>
         <Staking/>
         <Presale/>
-      </>
+      </div>
     );
   }
   

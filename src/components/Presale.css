@@ -1,10 +1,9 @@
 .Presale{
-    padding: 100px 24px 100px 24px;
+    padding: 50px 24px 40px 24px;
 }
 .center h1{
     color: white;
-    font-size: 31px;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 h1 .green{

@@ -26,11 +26,11 @@ const Hero = () => {
                 </div>
             </div>
             <div className='icons'>
-                 <img src={binance} width='200px' alt='logo'  className='logo'/>
-                 <img src={polygon} width='200px' alt='logo'  className='logo'/>    
-                 <img src={solana} width='200px' alt='logo'  className='logo'/>    
-                 <img src={eth} width='200px' alt='logo'  className='logo'/>    
-                 <img src={cardano} width='200px' alt='logo'  className='logo'/>    
+                 <img src={binance} alt='logo'  className='logo'/>
+                 <img src={polygon} alt='logo'  className='logo'/>    
+                 <img src={solana} alt='logo'  className='logo'/>    
+                 <img src={eth} alt='logo'  className='logo'/>    
+                 <img src={cardano} alt='logo'  className='logo'/>    
             </div>
             
             <div className='text'>

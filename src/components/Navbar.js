@@ -45,7 +45,7 @@ const handleClick = () => setClick(!click)
                     <li>
 
                         <div className='btn-group wallet-btn'>
-                            <button className='btn wallet-btn'>Connect<AiFillPlusCircle/></button>
+                            <button className='btn wallet-btn'>Enter Presale<AiFillPlusCircle/></button>
                         </div>
                     </li>
                 </ul>

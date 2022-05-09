@@ -102,7 +102,9 @@ p {
 .btn:hover {
   box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
 }
-
+.wallet-btn{
+    width: 100%;
+}
 .view{
     background-color: #0E1116;
     border: 2px solid #C3C4C5;
