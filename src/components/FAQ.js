@@ -37,20 +37,20 @@ const FAQ = () => {
                 title="How do I know I will get my tokens back from the borrower?"
                 content="Just like you cannot get a loan from a traditional financial system without collateral, the system does not just grant or borrow your assets to just anybody. "
              />
-            <div className="icons">
+            <div className="faq-icons">
                 <div className='icons-mobile'>
-                    <img src={gecko} width='40px' alt='logo'  className='logo'/> 
-                    <img src={cmc} width='40px' alt='logo'  className='logo'/>
-                    <img src={pancake} width='40px' alt='logo'  className='logo'/>    
+                    <img src={gecko} width='40px' alt='logo'  /> 
+                    <img src={cmc} width='40px' alt='logo'  />
+                    <img src={pancake} width='40px' alt='logo'  />    
                 </div>
 
                 <div className='icons-desktop'>
-                    <img src={coingecko} width='200px' alt='logo'  className='logo'/> 
-                    <img src={coinmarketcap} width='200px' alt='logo'  className='logo'/>
-                    <img src={pancakeswap} width='200px' alt='logo'  className='logo'/>    
+                    <img src={coingecko} width='200px' alt='logo'  /> 
+                    <img src={coinmarketcap} width='200px' alt='logo'  />
+                    <img src={pancakeswap} width='200px' alt='logo'  />    
                 </div>
 
-            </div>
+              </div>
             </div>
         </div>
     )

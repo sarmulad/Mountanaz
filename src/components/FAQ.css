@@ -2,13 +2,12 @@
     background-color: #0E1116;
 }
 
-
-h1{
+.FAQ h1{
     margin-bottom: 40px;
     font-size: 49px;
 }
 
-.icons{
+.faq-icons{
     margin-top: 65px;
 }
 .icons-mobile{
@@ -24,6 +23,7 @@ h1{
 .icons-desktop{
     display: none;
     }
+
 .icons-mobile{
     display: flex;
     align-items: center;
