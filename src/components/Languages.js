@@ -16,7 +16,7 @@ export const Languages = [
         {
             code: 'ar',
             name: 'العربية',
-            dir: 'rtl',
+            // dir: 'rtl',
             country_code: 'sa',
           },
     ]
