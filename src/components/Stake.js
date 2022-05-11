@@ -1,27 +1,31 @@
 import React from 'react'
 import './Stake.css'
-import Stake from '../assets/Staking.png'
+import Staking from '../assets/Staking.png'
 import Yield from '../assets/Yield.png'
 import Swap from '../assets/Exchange .png'
 import { BsChevronRight } from "react-icons/bs";
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 
-const stake = () => {
+const Stake = () => {
+    const {t} = useTranslation()
+
     return (
         <div className='stake'>
             <div className='container'>
                 {/* left */}
                 <div className='left'>
-                    <img src={Stake} alt='staking-img' />
+                    <img src={Staking} alt='staking-img' />
                 </div>
 
                 {/* right */}
                 <div className='right'>
-                    <h2>Stake your tokens</h2>
-                    <p>You may earn interest and the chance to vote on critical issues affecting the ecosystem by owning and staking the Mountanaz token. The staking protocol creates liquidity pools, with pools of staked earning incentives divided proportionally among liquidity suppliers or stakers.</p>
+
+                    <h2>{t('Stake_your_tokens')}</h2>
+                    <p>{t('Stake_your_tokens_text')}</p>
                     <div className='btn-container'>
-                    <Link to='/Benefit' ><button className='btn view'>Learn More <BsChevronRight/> </button></Link>
+                       <Link to='/Benefit' ><button className='btn view'>{t('Learn_more_btn')} <BsChevronRight/></button></Link>
                     </div>
                 </div>
 
@@ -30,10 +34,11 @@ const stake = () => {
             <div className='container'>
                 {/* right */}
                 <div className='right'>
-                    <h2>Participate in yield farming!</h2>
-                    <p>With this service, users will have access to enhanced liquidity, clear interest rates, and lowers speculative risks. It also simplifies the loan process without the need for a counterparty</p>
+
+                   <h2>{t('Yield_farming')}</h2>
+                    <p>{t('Yield_farming_text')}</p>
                     <div className='btn-container'>
-                    <Link to='/Benefit' > <button className='btn view'>Learn More <BsChevronRight/></button></Link>
+                       <Link to='/Benefit' ><button className='btn view'>{t('Learn_more_btn')} <BsChevronRight/></button></Link>
                     </div>
                 </div>
 
@@ -52,10 +57,10 @@ const stake = () => {
 
                 {/* right */}
                 <div className='right'>
-                    <h2>Swap other digital tokens at no cost at all!</h2>
-                    <p>Mountanaz identifies the best possible routes to fulfill trades across blockchain ecosystems. Thereby easing the burden for existing blockchain users and removing some barriers to entry for newbies.</p>
+                    <h2>{t('Swap_token')}</h2>
+                    <p>{t('Swap_token_text')}</p>
                     <div className='btn-container'>
-                       <Link to='/Benefit' ><button className='btn view'>Learn More <BsChevronRight/></button></Link>
+                       <Link to='/Benefit' ><button className='btn view'>{t('Learn_more_btn')} <BsChevronRight/></button></Link>
                     </div>
                 </div>
 
@@ -65,4 +70,4 @@ const stake = () => {
     )
 }
 
-export default stake
+export default Stake

@@ -30,6 +30,11 @@
     left: 400px;
    /* margin-left: 30%; */
 }
+
+html[layout-dir="rtl"] ,.staking-content.end-1{
+    right: 400px;
+
+  }
 .staking-col-1{
     max-width: 600px;
     padding: 32px;
@@ -64,4 +69,8 @@
         margin-bottom: 30px;
     }
    
+    html[layout-dir="rtl"] ,.staking-content.end-1{
+        right: 0px;
+    
+      }
 }

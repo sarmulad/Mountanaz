@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import './Staking.css'
 
 function Staking() {
+
+    const {t} = useTranslation()
     return (
       <div className='staking'>
             <div className='container'>
@@ -10,19 +13,19 @@ function Staking() {
 
                     <div className='staking-content'>
                         <div className='staking-col-1'>
-                            <p>Staking is the process of retaining tokens in a cryptocurrency wallet to receive a reward and support the blockchain network's security and operations. Staking, simply defined, is the act of placing coins into a cryptocurrency wallet and maintaining them there to get incentives.   </p>
+                             <p>{t('Staking_ben1')}</p>
                         </div>
                     </div>
 
                     <div className='staking-content end'>
                         <div className='staking-col-1'>
-                            <p>You may earn interest and the chance to vote on critical issues affecting the ecosystem by owning and staking the Mountanaz $MRI token.</p>
+                             <p>{t('Staking_ben2')}</p>
                         </div>
                     </div>
 
                     <div className='staking-content end-1'>
                         <div className='staking-col-1'>
-                            <p>The staking protocol creates liquidity pools, with pools of staked earning incentives divided proportionally among liquidity suppliers or stakers.</p>
+                            <p>{t('Staking_ben3')}</p>
                         </div>
                     </div>
             </div>

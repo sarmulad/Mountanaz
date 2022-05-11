@@ -26,11 +26,18 @@
 
 }
 
+
+
+/* html[layout-dir="rtl"] ,.phase-container {
+    border-right: 2px solid #B4C466;
+    border-left : 0px;
+} */
 .phase-container{
     /* max-width: 824px; */
     margin: 0 auto;
-    border-left: 2px solid #B4C466;
+    border-left : 2px solid #B4C466;
 }
+
 
 .phase{
     display: flex;
@@ -44,10 +51,13 @@
     height: 32px;
     border-radius: 9999px;
     background-color: #B4C466;
-    /* content: ''; */
     margin-left: -16px;
     position: absolute;
 }
+
+/* html[layout-dir="rtl"] ,.Roadmap .circle{
+    margin-right: -16px;
+} */
 
 .phase-item {
     margin: 0px 56px 56px 56px;

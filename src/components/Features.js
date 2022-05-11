@@ -5,25 +5,27 @@ import Scaleability from '../assets/Icons/Scaleability Icon.svg'
 import Decentralization from '../assets/Icons/Decentralization Icon.svg'
 import Community from '../assets/Icons/Community Icon.svg'
 import ReadMore from './ReadMore'
+import { useTranslation } from 'react-i18next'
 
 const Features = () => {
+    const{t} = useTranslation()
     return (
         <div className='features'>
-            <h1>Our Features</h1>
+            <h1>{t('Our_Features')}</h1>
             <div className='container'>
                 {/* left */}
                 <div className='left'>
                     <img src={userIcon}  alt='Simplified User Interface Icon' />
-                    <h2>Stake your tokens</h2>
-                    <ReadMore text={'You may earn interest and the chance to vote on critical issues affecting the ecosystem by owning and staking the Mountanaz token. The staking protocol creates liquidity pools, with pools of staked earning incentives divided proportionally among liquidity suppliers or stakers.'} />
+                    <h2>{t('Ft_stake_your_tokens')}</h2>
+                    <ReadMore text={t('Ft_stake_your_tokens_text')} />
+                   
                 </div>
 
                 {/* right */}
                 <div className='right'>
                     <img src={Scaleability}  alt='Scaleability Icon' />
-                    <h2>Scalability</h2>
-                    <ReadMore text={'Most existing DeFi projects hit a scaling roadblock they couldnt escape. Every transaction must be made public and recorded on the blockchain for blockchain technology to work. This restricts the number of transactions that may be completed at any one moment. Mountanaz is built on a blockchain technology that processes numerous transactions quickly'} />
-                    <p></p>
+                    <h2>{t('Scalability')}</h2>
+                    <ReadMore text={t('Scalability_text')} />
                 </div>
 
             </div>
@@ -32,15 +34,15 @@ const Features = () => {
                 {/* left */}
                 <div className='left'>
                     <img src={Decentralization}  alt='Simplified User Interface Icon' />
-                    <h2>Sustainability in Decentralization</h2>
-                    <ReadMore text={'To adequately safeguard the wealth it hosts, the platform would be wholly decentralized both in the short and long term. The platform and the community as a whole are to be open and permissionless. There is a strong emphasis on decentralization and participation. Both technology and community governance methods should allow for practical iteration while avoiding long-term capture by any one party to ensure sustainability.'} />
+                    <h2>{t('Sustainability_in_Decentralization')}</h2>
+                    <ReadMore text={t('Sustainability_in_Decentralization_text')} />
                 </div>
 
                 {/* right */}
                 <div className='right'>
                     <img src={Community}  alt='Simplified User Interface Icon' />
-                    <h2>Large Global Community</h2>
-                    <p>Join our large community of active users from all around the world! Connect and collaborate with various individuals from diverse knowledge and background. Our community welcomes everyone from all walks of life</p>
+                    <h2>{t('Community')}</h2>
+                    <ReadMore text={t('Community_text')} />
                 </div>
 
             </div>

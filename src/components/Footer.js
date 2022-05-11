@@ -2,8 +2,10 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import { FaTelegram, FaFacebook, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa'
 import './Footer.css'
+import { useTranslation} from "react-i18next";
 
 const Footer = () => {
+    const {t} = useTranslation()
     return (
         <div className='footer'>
             <div className='container'>
@@ -11,7 +13,7 @@ const Footer = () => {
                     <img src={logo} alt='logos'/>
                 </div>
                 <div className='col'>
-                    <h5>Connect with Us</h5>
+                    <h5>{t('Connect_with_us')}</h5>
                         <div className='icon-container'>
                             <a href='/'><FaTelegram className='icon'/></a>
                             <a href='/'><FaFacebook className='icon'/></a>

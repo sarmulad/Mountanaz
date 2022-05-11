@@ -7,35 +7,37 @@ import pancakeswap from '../assets/pancakeswap.svg'
 import gecko from '../assets/Vectorgecko.svg'
 import cmc from '../assets/cmc.svg'
 import pancake from '../assets/pancake.svg'
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+    const {t} = useTranslation()
     return (
         <div className="FAQ">
             <div className="container">
-                <h1>Frequently Asked Questions</h1>
+                <h1>{t('Faq')}</h1>
             <Accordion
-                title="What is Mountanaz?"
-                content="Mountanaz is a multi-chain platform that acts as a bridge that links current blockchain ecosystems to overcome the constraints of previous decentralized technologies."
+                title={t('What_is_Mountanaz')}
+                content={t('What_is_Mountanaz_ans')}
              />
               <Accordion
-                title="How does the multi-chain system work in Mountanaz?"
-                content="Mountanaz is a multi-chain platform that acts as a bridge that links current blockchain ecosystems to overcome the constraints of previous decentralized technologies."
+                title={t("Multi_chain_work")}
+                content={t("Multi_chain_work_ans")}
              />
               <Accordion
-                title="How will scams be prevented in the ecosystem? "
-                content="Smart contracts are an essential aspect of the blockchain ecosystem, and they are used extensively. A smart contract is a programming technique that uses digital technology to facilitate, verify, or enforce an agreement. Smart contracts allow for the execution of secure transactions without the involvement of a third party."
+                title={t("Scam_prevention")}
+                content={t("Scam_prevention_ans")}
              />
               <Accordion
-                title="How does Staking Work?"
-                content="Staking on the Mountanaz entails locking your tokens for a fixed amount of time on the Protocol."
+                title={t("How_does_staking_work")}
+                content={t("How_does_staking_work_ans")}
              />
               <Accordion
-                title="How does Yield Farming Work?"
-                content="When you make your crypto accessible on the ecosystem, the system automatically finds who needs to borrow the tokens. You get to earn passive income in the form of interest and a share of the revenue made."
+                title={t("How_does_yield_work")}
+                content={t("How_does_yield_work_ans")}
              />
               <Accordion
-                title="How do I know I will get my tokens back from the borrower?"
-                content="Just like you cannot get a loan from a traditional financial system without collateral, the system does not just grant or borrow your assets to just anybody. "
+                title={t("Borrower")}
+                content={t("Borrower_ans")}
              />
             <div className="faq-icons">
                 <div className='icons-mobile'>

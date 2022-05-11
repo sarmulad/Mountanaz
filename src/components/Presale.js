@@ -1,16 +1,19 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './Presale.css'
 
 
 
 const Presale = () => {
+
+    const{ t} = useTranslation()
     return (
         <div className='Presale'>
             <div className='container'>
                 <div className='center'>
-                        <h1>Don't miss out on an opportunity to let your money work for you on the <span className='green'>Largest Multi-Chain DeFi Protocol </span></h1>
-                        <div className='button-container'>
-                            <button className='btn buy'>Enter Presale</button>
+                        <h1>{t('Presale_text')} <span className='green'>{t('Presale_text_green')}</span></h1>
+                        <div className='button-container presale-btn'>
+                            <button className='btn buy'>{t('Enter_presale_btn')}</button>
                         </div>
                 </div>
             </div>

@@ -93,12 +93,20 @@ p {
   text-align: center;
 }
 
+.lang-btn{
+  background-color: transparent;
+  font-size: inherit;
+  padding: 10px 16px;
+  border: 0px ;
+}
+
+
 *.btn{
   display: flex;
   align-items: center;
   grid-gap: 10px;
-
 }
+
 .btn:hover {
   box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
 }

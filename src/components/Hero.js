@@ -6,22 +6,24 @@ import solana from '../assets/solana.svg'
 import eth from '../assets/eth.svg'
 import cardano from '../assets/cardano.svg'
 import { BsChevronRight } from "react-icons/bs";
-
-
 import Navbar from './Navbar'
+import { useTranslation} from "react-i18next";
+
+
 
 const Hero = () => {
+    const { t } = useTranslation();
     return (
         <div className='hero'>
           <Navbar />
             <div className='container'>
                 {/* Left Side */}
                 <div className='left'>
-                    <h1>Experience the Power of a <span className='grey'>Multi-Chain Token</span></h1>
-                    <p>Mountanaz is a community-governed DeFi platform focused on Staking, Lending, Governance, and Decentralized</p>
+                    <h1>{t("Header")} <span className='green'>{t('Header_green')}</span></h1>
+                    <p>{t("Header_text")}</p>
                     <div className='button-container'>
-                        <button className='btn buy'>Buy $MON</button>
-                        <button className='btn view'>View Charts <BsChevronRight/> </button>
+                        <button className='btn buy'>{t('Header_buy_btn')}</button>
+                        <button className='btn view'>{t('Header_chart_btn')} <BsChevronRight/> </button>
                     </div>
                 </div>
             </div>
@@ -34,7 +36,7 @@ const Hero = () => {
             </div>
             
             <div className='text'>
-                <p>Don't miss out on your chance to learn, earn and borrow; let your money work for you.</p>
+                <p>{t('Header_missout_text')}</p>
             </div>
         </div>
     )
